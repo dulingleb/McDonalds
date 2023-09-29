@@ -13,6 +13,14 @@
 		9663EB642ABCBB980082B612 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9663EB622ABCBB980082B612 /* Main.storyboard */; };
 		9663EB662ABCBB990082B612 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9663EB652ABCBB990082B612 /* Assets.xcassets */; };
 		9663EB692ABCBB990082B612 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9663EB672ABCBB990082B612 /* LaunchScreen.storyboard */; };
+		9663EB762ABCBCE40082B612 /* Meal.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9663EB752ABCBCE40082B612 /* Meal.swift */; };
+		9663EB782ABCBD510082B612 /* Feedback.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9663EB772ABCBD510082B612 /* Feedback.swift */; };
+		9663EB7A2ABF78440082B612 /* MainTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9663EB792ABF78440082B612 /* MainTableViewController.swift */; };
+		96670AA12ABF7B1000168F4C /* MealsData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96670AA02ABF7B1000168F4C /* MealsData.swift */; };
+		96F3420B2AC1A6CC00F666FA /* MealViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96F3420A2AC1A6CC00F666FA /* MealViewController.swift */; };
+		96F3420F2AC1E1D300F666FA /* FeedbackViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96F3420E2AC1E1D300F666FA /* FeedbackViewController.swift */; };
+		96F342142AC2203C00F666FA /* Int.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96F342132AC2203C00F666FA /* Int.swift */; };
+		96F342162AC618F100F666FA /* FeedbacksTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96F342152AC618F100F666FA /* FeedbacksTableViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +32,14 @@
 		9663EB652ABCBB990082B612 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		9663EB682ABCBB990082B612 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		9663EB6A2ABCBB990082B612 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9663EB752ABCBCE40082B612 /* Meal.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Meal.swift; sourceTree = "<group>"; };
+		9663EB772ABCBD510082B612 /* Feedback.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Feedback.swift; sourceTree = "<group>"; };
+		9663EB792ABF78440082B612 /* MainTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTableViewController.swift; sourceTree = "<group>"; };
+		96670AA02ABF7B1000168F4C /* MealsData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MealsData.swift; sourceTree = "<group>"; };
+		96F3420A2AC1A6CC00F666FA /* MealViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MealViewController.swift; sourceTree = "<group>"; };
+		96F3420E2AC1E1D300F666FA /* FeedbackViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedbackViewController.swift; sourceTree = "<group>"; };
+		96F342132AC2203C00F666FA /* Int.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Int.swift; sourceTree = "<group>"; };
+		96F342152AC618F100F666FA /* FeedbacksTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedbacksTableViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,15 +72,79 @@
 		9663EB5B2ABCBB980082B612 /* McDonalds */ = {
 			isa = PBXGroup;
 			children = (
-				9663EB5C2ABCBB980082B612 /* AppDelegate.swift */,
-				9663EB5E2ABCBB980082B612 /* SceneDelegate.swift */,
-				9663EB602ABCBB980082B612 /* ViewController.swift */,
-				9663EB622ABCBB980082B612 /* Main.storyboard */,
-				9663EB652ABCBB990082B612 /* Assets.xcassets */,
-				9663EB672ABCBB990082B612 /* LaunchScreen.storyboard */,
+				96F342122AC2201600F666FA /* Extentions */,
 				9663EB6A2ABCBB990082B612 /* Info.plist */,
+				9663EB742ABCBCB60082B612 /* Models */,
+				9663EB732ABCBC670082B612 /* Controllers */,
+				9663EB722ABCBC540082B612 /* Views */,
+				9663EB7C2ABF7AC40082B612 /* Services */,
+				9663EB712ABCBBD40082B612 /* Assets */,
+				9663EB702ABCBBC30082B612 /* App */,
 			);
 			path = McDonalds;
+			sourceTree = "<group>";
+		};
+		9663EB702ABCBBC30082B612 /* App */ = {
+			isa = PBXGroup;
+			children = (
+				9663EB5C2ABCBB980082B612 /* AppDelegate.swift */,
+				9663EB5E2ABCBB980082B612 /* SceneDelegate.swift */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		9663EB712ABCBBD40082B612 /* Assets */ = {
+			isa = PBXGroup;
+			children = (
+				9663EB652ABCBB990082B612 /* Assets.xcassets */,
+			);
+			path = Assets;
+			sourceTree = "<group>";
+		};
+		9663EB722ABCBC540082B612 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				9663EB622ABCBB980082B612 /* Main.storyboard */,
+				9663EB672ABCBB990082B612 /* LaunchScreen.storyboard */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		9663EB732ABCBC670082B612 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				9663EB602ABCBB980082B612 /* ViewController.swift */,
+				9663EB792ABF78440082B612 /* MainTableViewController.swift */,
+				96F3420A2AC1A6CC00F666FA /* MealViewController.swift */,
+				96F3420E2AC1E1D300F666FA /* FeedbackViewController.swift */,
+				96F342152AC618F100F666FA /* FeedbacksTableViewController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		9663EB742ABCBCB60082B612 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				9663EB752ABCBCE40082B612 /* Meal.swift */,
+				9663EB772ABCBD510082B612 /* Feedback.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		9663EB7C2ABF7AC40082B612 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				96670AA02ABF7B1000168F4C /* MealsData.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		96F342122AC2201600F666FA /* Extentions */ = {
+			isa = PBXGroup;
+			children = (
+				96F342132AC2203C00F666FA /* Int.swift */,
+			);
+			path = Extentions;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -111,6 +191,10 @@
 				Base,
 			);
 			mainGroup = 9663EB502ABCBB980082B612;
+			packageReferences = (
+				96F342102AC1E3B000F666FA /* XCRemoteSwiftPackageReference "StarryStars" */,
+				96F342112AC1E42500F666FA /* XCRemoteSwiftPackageReference "Cosmos" */,
+			);
 			productRefGroup = 9663EB5A2ABCBB980082B612 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -138,8 +222,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9663EB782ABCBD510082B612 /* Feedback.swift in Sources */,
+				96F3420B2AC1A6CC00F666FA /* MealViewController.swift in Sources */,
+				9663EB762ABCBCE40082B612 /* Meal.swift in Sources */,
 				9663EB612ABCBB980082B612 /* ViewController.swift in Sources */,
 				9663EB5D2ABCBB980082B612 /* AppDelegate.swift in Sources */,
+				96F342162AC618F100F666FA /* FeedbacksTableViewController.swift in Sources */,
+				9663EB7A2ABF78440082B612 /* MainTableViewController.swift in Sources */,
+				96670AA12ABF7B1000168F4C /* MealsData.swift in Sources */,
+				96F342142AC2203C00F666FA /* Int.swift in Sources */,
+				96F3420F2AC1E1D300F666FA /* FeedbackViewController.swift in Sources */,
 				9663EB5F2ABCBB980082B612 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -363,6 +455,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		96F342102AC1E3B000F666FA /* XCRemoteSwiftPackageReference "StarryStars" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/peterprokop/StarryStars";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.0.0;
+			};
+		};
+		96F342112AC1E42500F666FA /* XCRemoteSwiftPackageReference "Cosmos" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/evgenyneu/Cosmos";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 23.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
 	};
 	rootObject = 9663EB512ABCBB980082B612 /* Project object */;
 }
